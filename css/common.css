@@ -1,0 +1,228 @@
+@charset "utf-8";
+/*css reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  margin:0;
+  padding:0;
+}
+body,button,input,select,textarea {
+  font:normal 14px/1.5 "Heiti SC","Arial","Lucida Grande",Verdana,STXhei,"Microsoft YaHei","hei";
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,iframe {
+  display:block;
+}
+h1, h2, h3{
+  font-weight:600;
+}
+h4,h5,h6 {
+  font-weight:500;
+}
+h1{
+  font-size: 18px;
+}
+h2{
+  font-size: 16px;
+}
+h3{
+  font-size: 14px;
+}
+address,cite,dfn,em,var,i {
+  font-style:normal;
+  font-weight:normal;
+}
+dfn {
+  font-family:Arial;
+}
+ul,ol ,ul li,ol li{
+  list-style:none;
+}
+a {
+  color:#000;
+  text-decoration:none;
+}
+a:hover {
+  -webkit-transition:color .2s linear;
+  -moz-transition:color .2s linear;
+  -ms-transition:color .2s linear;
+  -o-transition:color .2s linear;
+  transition:color .2s linear;
+}
+fieldset,img,button,input {
+  border:0 none;
+  vertical-align: middle;
+}
+button,input,select,textarea {
+  font-size:100%;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+/*-webkit-appearance改变按钮和其他控件的外观，使其类似于原生控件*/
+input {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  border-radius:0;
+}
+body {
+  min-width:320px;
+  background:#f9f9f9;
+  overflow-x:hidden;
+  -webkit-text-size-adjust:none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  -webkit-font-smoothing:antialiased;
+/*  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;*/
+  color:#000;
+}
+:focus {
+  outline:none;
+}
+/*浮动清除*/
+.clearfix:after {
+  clear:both;
+  content:'.';
+  display:block;
+  height:0;
+  visibility:hidden;
+  line-height:0;
+}
+.clearfix {
+  *zoom:1;
+}
+.fl {
+  float:left;
+}
+.fr {
+  float:right;
+}
+.clear {
+  clear:both;
+}
+.overflow {
+  overflow:hidden;
+}
+.center{
+  text-align:center;
+}
+/*多行截断用...表示*/
+.ellips {
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.ellips_line2,.ellips_line3 {
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.ellips_line2 {
+  -webkit-line-clamp:2;
+}
+.ellips_line3 {
+  -webkit-line-clamp:3;
+}
+.pos_rel {
+  position:relative;
+}
+.abs_size {
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+.opacity {
+  opacity:0.7;
+}
+.direction_ltr::-webkit-input-placeholder,
+.direction_ltr::-moz-input-placeholder,
+.direction_ltr::-ms-input-placeholder {
+  direction:ltr!important;
+  text-align:left;
+}
+html,body,.h100{
+  height:100%;
+}
+/*两端对齐*/
+.c_bothends {
+  overflow:hidden;
+  text-align:justify;
+  text-align-last:justify;
+}
+.c_bothends:after {
+  content:'';
+  display:inline-block;
+  width:100%;
+  overflow:hidden;
+  height:0;
+}
+/*自动截断换行*/
+.break_all {
+  word-break:break-all;
+}
+.flex{
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flex .flex-item{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-box-flex: 1;
+    -ms-flex: 1;
+    box-flex: 1;
+    flex: 1;
+}
+.flex .flex-item8{
+    -webkit-box-flex: 8;
+    -moz-flex: 8;
+    -ms-box-flex: 8;
+    -moz-box-flex: 8;
+    box-flex: 8;
+    -ms-flex: 8;
+    flex: 8;
+}
+.flex .flex-item6{
+    -webkit-box-flex: 6;
+    -moz-flex: 6;
+    -ms-box-flex: 6;
+    -moz-box-flex: 6;
+    box-flex: 6;
+    -ms-flex: 6;
+    flex: 6;
+}
+.flex .flex-item4{
+    -webkit-box-flex: 4;
+    -moz-flex: 4;
+    -ms-box-flex: 4;
+    -moz-box-flex: 4;
+    box-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+}
+.flex .flex-item2{
+    -webkit-box-flex: 2;
+    -moz-flex: 2;
+    -ms-box-flex: 2;
+    -moz-box-flex: 2;
+    box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+.flex .flex-item5{
+    -webkit-box-flex: 5;
+    -ms-box-flex: 5;
+    -moz-box-flex: 5;
+    box-flex: 5;
+    -ms-flex: 5;
+    -webkit-flex: 5;
+    -moz-flex: 5;
+    flex: 5;
+
+}
