@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(236,236,236);
+}
+
+.content-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: white;
+  height: auto;
+}
+
+.title {
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
